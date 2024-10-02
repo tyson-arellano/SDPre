@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Objective4Lab1 {
   public static void main(String[] args) {
 
-    Scanner keyboard = new Scanner(System.in);
+    try (Scanner keyboard = new Scanner(System.in)) {
     System.out.println("Please enter your first name");
     String fname = keyboard.nextLine();
     System.out.println("Please enter your last name");
@@ -20,7 +20,7 @@ public class Objective4Lab1 {
     System.out.println("My favorite animal is " +  favoriteAnimal);
     System.out.println("My favorite food is " +  favoriteFood);
     System.out.println("My favorite song is " +  favoriteSong);
-
+    }
     
   }
 }
