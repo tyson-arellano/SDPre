@@ -15,21 +15,21 @@ public class Objective7Lab5 {
         System.out.println();
         
         selection = scanner.nextInt();
-
-        switch (selection){
-            case 1 -> System.out.println("Hello Human");
-            case 2 -> System.out.println("Apples, Bananas, Coconuts");
-            case 3 -> System.out.println("Goodbye");
-                
-            
-            default -> System.out.println("Invalid Selection, Please select 1, 2 or 3. ");
+        if(selection == 1){
+            System.out.println("Hello");
         }
-        if (selection ==3) {
+        if(selection == 2){
+            System.out.println("Apples, Bananas, Coconuts");
+        }        
+        if (selection == 3) {
+            System.out.println("Goodbye");
             break;
+        }   
+            
         }
-  
+        scanner.close();
       }
   
-      scanner.close();
+      
     }
-  }
+  
